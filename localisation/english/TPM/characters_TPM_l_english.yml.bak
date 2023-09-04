@@ -1,0 +1,86 @@
+﻿l_english:
+
+  TPM_black_hat_leader:0
+  TPM_black_hat_leader_desc:0 
+  TPM_black_hat_advisor:0
+  TPM_black_hat_advisor_desc:0 "§OI've had enough about of some of you bandits in blue.§!"
+  
+  TPM_black_hat_disgruntled_leader:0
+  TPM_black_hat_disgruntled
+  TPM_black_hat_disgruntled_advisor:0
+  TPM_black_hat_disgruntled_advisor_desc:0
+  
+  TPM_steel_hat_content_leader:0
+  TPM_steel_hat_content_leader_desc:0
+  TPM_steel_hat_content_advisor:0
+  TPM_steel_hat_content_advisor_desc:0
+  
+  TPM_the_chief_leader:0
+  TPM_the_chief_leader_desc:0
+  TPM_the_chief_advisor:0
+  TPM_the_chief_advisor_desc:0
+  
+  TPM_community_council_leader:0
+  TPM_community_council_leader_desc:0
+  
+  TPM_franklin_advisor:0
+  TPM_franklin_advisor_desc:0
+  
+  TPM_grant_advisor:0
+  TPM_grant_advisor_desc:0
+  
+  TPM_george_advisor:0
+  TPM_george_advisor_desc:0
+  
+  TPM_mac:0 "Just a Cool Guy"
+  TPM_mac_advisor_desc:0 "One heck of a bastard here"
+  
+  TPM_cunningham_advisor:0
+  TPM_cunningham_advisor_desc:0
+  
+  TPM_grenham_advisor:0
+  TPM_grenham_advisor_desc:0
+  
+  TPM_andrews_advisor:0
+  TPM_andrews_advisor_desc:0
+  
+  TPM_gary_advisor:0
+  TPM_gary_advisor_desc:0
+  
+  TPM_rockwell_advisor:0
+  TPM_rockwell_advisor_desc:0
+  
+  TPM_francis_advisor:0
+  TPM_francis_advisor_desc:0
+  
+  TPM_danny_advisor:0
+  TPM_danny_advisor_desc:0
+  
+  TPM_shank_advisor:0
+  TPM_shank_advisor_desc:0
+  
+  TPM_trevor_advisor:0
+  TPM_trevor_advisor_desc:0
+  
+  TPM_mayor_advisor:0
+  TPM_mayor_advisor_desc:0
+  
+  TPM_callahan_fake_advisor:0
+  TPM_callahan_fake_advisor_desc:0
+  
+  TPM_coolant_advisor:0
+  TPM_coolant_advisor_desc:0
+  
+  TPM_marshall_advisor:0
+  TPM_marshall_advisor_desc:0
+  
+  TPM_larry_advisor:0
+  TPM_larry_advisor_desc:0
+  
+  TPM_bob_advisor:0
+  TPM_bob_advisor_desc:0
+  
+  TPM_pulp_advisor:0
+  TPM_pulp_advisor_desc:0
+  
+  TPM_content:0 "Satisfied"
