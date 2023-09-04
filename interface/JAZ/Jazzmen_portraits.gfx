@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_jazzman"
+		texturefile = "gfx/leaders/jazzman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_jazzmen"
+		texturefile = "gfx/leaders/jazz_council.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_solomon"
+		texturefile = "gfx/leaders/solomon.dds"
+	}
+}

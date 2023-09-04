@@ -1,0 +1,102 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_TPM_andrews"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_andrews_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_bob"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_bob_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_callahan"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_callahan_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_TPM_callahan_black"
+		texturefile = "gfx/leaders/TPM/portrait_tpm_callahan_black.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_TPM_callahan_steel"
+		texturefile = "gfx/leaders/TPM/portrait_tpm_callahan_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_callahan_black"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_black_callahan_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_callahan_steel"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_callahan_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_coolant"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_coolant_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_cunningham"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_cunningham_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_danny"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_danny_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_francis"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_francis_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_franklin"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_franklin_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_gary"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_gary_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_george"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_george_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_grant"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_grant_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_grenham"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_grenham_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_johnny"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_johnny_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_larry"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_larry_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_louis"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_louis_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_mac"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_mack_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_marshall"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_marshall_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_mayor"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_mayor_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_pulp"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_pulp_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_rockwell"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_rockwell_TPM.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TPM_trevor"
+		texturefile = "gfx/interface/ideas/characters_small_icons/advisor_trevor_TPM.dds"
+	}
+}
