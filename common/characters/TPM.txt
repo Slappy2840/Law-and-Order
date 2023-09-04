@@ -1,0 +1,513 @@
+characters = {
+	TPM_patrol_chief_callahan = {
+		name = "Patrol Chief Callahan"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_TPM_callahan
+				small = GFX_idea_TPM_callahan
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = TPM_the_chief_advisor
+			allowed = {
+					OR = {
+						has_government = people
+						has_government = elites
+						}
+					original_tag = TPM
+				}
+			traits = {
+				TPM_the_chief
+				}
+			cost = 150
+			}
+		country_leader = {
+			desc = CALLAHAN_BLUE_DESC
+			ideology = peoples_militia
+			traits = {
+				TPM_blue_hat_leader
+				}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		corps_commander = {
+			traits = {
+				charismatic_trait
+				agile_trait
+				fast_shot_trait
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	TPM_community_council = {
+		name = "Community Council"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_TEX_provisional_senate 
+			}
+		}
+		country_leader = {
+			desc = TPM_COUNCIL_DESC
+			ideology = feudalism
+			traits = {
+				TPM_council_leader
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	TPM_steel_hat_callahan = {
+		name = "Steel Hat Callahan"
+		portraits = {
+			civilian = {
+				large = GFX_leader_TPM_callahan_steel
+				small = GFX_idea_TPM_callahan_steel
+			}
+		}
+		advisor = {
+			slot = army_chief
+			allowed = {
+					has_government = intellectuals
+					original_tag = TPM
+				}
+			traits = {
+				TPM_steel_hat_content
+				}
+			cost = 150
+			}
+		country_leader = {
+			desc = CALLAHAN_STEEL_DESC
+			ideology = technocracy
+			traits = {
+				TPM_steel_hat_content_leader 
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	TPM_black_hat_callahan = {
+		name = "Black Hat Callahan"
+		portraits = {
+			civilian = {
+				large = GFX_leader_TPM_callahan_black
+				small = GFX_idea_TPM_callahan_black
+			}
+		}
+		advisor = {
+			slot = army_chief
+			allowed = {
+					has_government = ruler
+					original_tag = TPM
+				}
+			traits = {
+				TPM_black_hat_disgruntled 
+				}
+			cost = 150
+			}
+		country_leader = {
+			desc = CALLAHAN_BLACK_DESC
+			ideology = benevolent_dictatorship
+			traits = {
+				TPM_black_hat_disgruntled_leader
+				}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	TPM_franklin = {
+		name = "Patrol Lead Franklin"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_franklin
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = TPM_franklin_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_franklin 
+				}
+			cost = 150
+			}
+	}
+	TPM_lead_grant = {
+		name = "Patrol Lead Grant"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_grant
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = TPM_grant_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_grant
+				}
+			cost = 100
+			}
+	}
+	TPM_lead_george = {
+		name = "Lead Sheriff George"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_george
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = TPM_george_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_george
+				}
+			cost = 100
+			}
+	}
+	TPM_mac = {
+		name = "Patrol Lead Mack"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_mac
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TPM_advisor_mac
+			desc = TPM_mac_advisor_desc
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_mac_trait
+				}
+			cost = 100
+			}
+	}
+	TPM_cunningham = {
+		name = "Lead Sheriff Cunningham"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_cunningham
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TPM_advisor_cunningham
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_cunningham 
+				}
+			cost = 100
+			}
+	}
+	TPM_grenham = {
+		name = "Patrol Lead Grenham"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_grenham
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TPM_advisor_grenham
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_grenham 
+				}
+			cost = 100
+			}
+	}
+	TPM_andrews = {
+		name = "Deputy Trainee Andrews"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_andrews
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TPM_andrews_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_andrews				
+				}
+			cost = 100
+			}
+	}
+	TPM_lead_gary = {
+		name = "Patrol Lead Gary"
+		
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_gary
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TPM_gary_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_gary 
+				}
+			cost = 100
+			}
+	}
+	TPM_rockwell = {
+		name = "Lead Sheriff Rockwell"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_rockwell
+			}
+		}
+		advisor = {
+			slot = research_advisor
+			idea_token = TPM_rockwell_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_rockwell
+			}
+			research_bonus = {
+				cat_land_doctrine = 0.15
+			}
+			cost = 100
+		}
+	}
+	TPM_lead_francis = {
+		name = "Patrol Lead Francis"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_francis
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TPM_francis_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_francis 
+				}
+			cost = 100
+			}
+	}
+	TPM_danny = {
+		name = "Dynamite Danny"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_danny
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TPM_danny_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_danny 
+				}
+			cost = 150
+			}
+	}
+	TPM_shank = {
+		name = "Louis 'The Shank' Fletcher"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_louis
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TPM_shank_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_shank 
+				}
+			cost = 100
+			}
+	}
+	TPM_trevor = {
+		name = "Deputy Trevor"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_trevor
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TPM_trevor_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_trevor 
+				}
+			cost = 100
+			}
+	}
+	TPM_mayor = {
+		name = "Da Mayor"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_mayor
+			}
+			army = {
+				small = GFX_idea_TPM_mayor
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = TPM_mayor_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_mayor 
+				}
+			cost = 50
+			}
+	}
+	TPM_callahan_fake = {
+		name = "Johnny Callahan"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_johnny
+			}
+			army = {
+				small = GFX_idea_TPM_johnny
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_callahan_fake_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_callahan_fake 
+				}
+			cost = 100
+			}
+	}
+	TPM_lead_coolant = {
+		name = "Patrol Lead Coolant"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_coolant
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_coolant_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_coolant 
+				}
+			cost = 100
+			}
+	}
+	TPM_lead_marshall = {
+		name = "Patrol Lead Marshall"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_marshall
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_marshall_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_marshall 
+				}
+			cost = 100
+			}
+	}
+	TPM_larry = {
+		name = "Deputy Larry"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_larry
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_larry_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_larry 
+				}
+			cost = 100
+			}
+	}
+	TPM_bob = {
+		name = "Deputy Bob"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_bob
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_bob_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_bob 
+				}
+			cost = 100
+			}
+	}
+	TPM_pulp = {
+		name = "Deputy Pulp"
+		portraits = {
+			civilian = {
+				small = GFX_idea_TPM_pulp
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = TPM_pulp_advisor
+			allowed = {
+					original_tag = TPM
+				}
+			traits = {
+				TPM_pulp 
+				}
+			cost = 100
+			}
+	}
+}

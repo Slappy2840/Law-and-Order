@@ -1,0 +1,42 @@
+BAM_strategy_plan = {
+	name = "BAM default"
+	desc = "Prio"
+
+	enable = {
+		original_tag = BAM
+	}
+	abort = { always = no }
+
+	ai_national_focuses = {
+		BAM_captains_isolation
+		BAM_rears_its_head
+		BAM_cannery_captain
+		
+		BAM_bayou_life
+		BAM_trade_orleans
+		BAM_trade_houston
+		BAM_shrimpy
+		BAM_festung
+		
+		BAM_patrol1
+		BAM_maw1
+		BAM_texas1
+		BAM_indians1
+		BAM_CRINKLE_HIIIIIIIII
+		
+		BAM_gumbo
+		BAM_language
+		
+		BAM_packed1
+		BAM_packed2
+		
+		BAM_patrol2
+		BAM_maw2
+		BAM_texas2
+		BAM_indians2
+		BAM_mongers2
+		
+		BAM_festung_fr_this_time
+		BAM_shrimpment
+	}
+}

@@ -1,0 +1,599 @@
+focus_tree = { 
+	id = bam_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BAM
+		}
+	}
+	default = no
+	shared_focus = settler_schools
+    shared_focus = settler_palisade
+    shared_focus = settler_community
+
+	focus = {
+		id = BAM_captains_isolation
+		icon = GFX_goal_generic_naval_doctrines_focus
+		cost = 7
+		x = 12
+		y = 1
+		completion_reward = {
+			country_event = nf_bam.1
+		}
+	}
+	focus = {
+		id = BAM_rears_its_head
+		icon = GFX_goal_generic_backroom_planning
+		cost = 7
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_captains_isolation
+        }
+        relative_position_id = BAM_captains_isolation
+		completion_reward = {
+			country_event = nf_bam.2
+		}
+	}
+	focus = {
+		id = BAM_cannery_captain
+		icon = GFX_goal_CAF_naval_supremacy
+		cost = 7
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_rears_its_head
+        }
+        relative_position_id = BAM_rears_its_head
+		completion_reward = {
+			unlock_all_available_generic_branches = yes
+			country_event = nf_bam.3
+		}
+	}
+
+	focus = {
+		id = BAM_bayou_life
+		icon = GFX_goal_pal_drug_followup
+		cost = 60
+		x = 17
+		y = 1
+        available = {
+			has_completed_focus = BAM_cannery_captain
+		}
+        relative_position_id = BAM_cannery_captain
+		completion_reward = {
+			870 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_temp_variable = {
+					development_to_add = 2
+				}
+				add_development_to_node = yes
+			}
+		}
+	}
+	focus = {
+		id = BAM_trade_orleans
+		icon = GFX_goal_generic_gentlemen_sniper
+		cost = 60
+		x = -1
+		y = 1
+        prerequisite = {
+            focus = BAM_bayou_life
+        }
+        relative_position_id = BAM_bayou_life
+		completion_reward = {
+		set_temp_variable = { caps_to_add = -50 }
+		add_caps = yes
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 500
+			producer = JAZ
+			}
+		}
+	}
+	focus = {
+		id = BAM_trade_houston
+		icon = GFX_goal_moj_repconn_rocket
+		cost = 60
+		x = 1
+		y = 1
+        prerequisite = {
+            focus = BAM_bayou_life
+        }
+        relative_position_id = BAM_bayou_life
+		completion_reward = {
+		set_temp_variable = { caps_to_add = -50 }
+		add_caps = yes
+			870 = {
+				add_resource = {
+					type = metal
+					amount = 4
+				}
+				add_resource = {
+					type = water
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAM_gumbo
+		icon = GFX_goal_SHI_norton_const_monarch
+		cost = 60
+		x = -2
+		y = 1
+        prerequisite = {
+            focus = BAM_trade_orleans
+        }
+        relative_position_id = BAM_trade_orleans
+		completion_reward = {
+			add_ideas = {
+			bam_francophones
+			}
+		}
+	}
+	focus = {
+		id = BAM_language
+		icon = GFX_goal_MAX_imperial_seal
+		cost = 60
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_gumbo
+        }
+        relative_position_id = BAM_gumbo
+		completion_reward = {
+			swap_ideas = {
+			add_idea = 	bam_francophones_alt
+			remove_idea = bam_francophones
+			}
+		}
+	}
+	focus = {
+		id = BAM_packed1
+		icon = GFX_goal_NCR_Urban_Draft
+		cost = 60
+		x = 2
+		y = 1
+        prerequisite = {
+            focus = BAM_trade_houston
+        }
+        relative_position_id = BAM_trade_houston
+		completion_reward = {
+			HRO = {
+            every_owned_state = {
+                set_temp_variable = { pop_add = -1000 }
+				add_state_population_no_state_name = yes
+            }
+			add_stability = .1
+		}
+		870 = {
+                set_temp_variable = { pop_add = 3000 }
+				add_state_population_no_state_name = yes
+            }
+	}
+}
+	focus = {
+		id = BAM_packed2
+		icon = GFX_goal_generic_contraptions_girl
+		cost = 60
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_packed1
+        }
+        relative_position_id = BAM_packed1
+		completion_reward = {
+			add_manpower = 1000
+			add_political_power = 100
+			add_stability = -.05
+			add_war_support = .05
+		}
+	}
+	focus = {
+		id = BAM_shrimpy
+		icon = GFX_goal_generic_boat_cruise
+		cost = 60
+		x = 1
+		y = 1
+		available = {
+		has_idea = 	bam_post_raid_recovery 
+		}
+        prerequisite = {
+            focus = BAM_trade_orleans
+        }
+        prerequisite = {
+            focus = BAM_trade_houston
+        }
+        relative_position_id = BAM_trade_orleans
+		completion_reward = {
+			country_event = nf_bam.4
+		}
+	}
+	focus = {
+		id = BAM_festung
+		icon = GFX_goal_poseidon_poster
+		cost = 60
+		x = 0
+		y = 1
+		available = {
+		date > 2276.1.1
+		}
+        prerequisite = {
+            focus = BAM_shrimpy
+        }
+        relative_position_id = BAM_shrimpy
+		completion_reward = {
+			add_ideas = {
+					bam_honest_work
+				}
+		}
+	}
+	
+	focus = {
+		id = BAM_patrol1
+		icon = GFX_goal_pal_pr_cyclops
+		cost = 30
+		x = -4
+		y = 1
+		available = {
+				has_war_with = TPM
+			}
+        prerequisite = {
+            focus = BAM_festung
+        }
+		bypass = {
+		TPM = {
+		exists = no
+		}
+	}
+        relative_position_id = BAM_festung
+		completion_reward = {
+			add_manpower = 100
+			add_stability = .05
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+		}
+	}
+	focus = {
+		id = BAM_patrol2
+		icon = GFX_goal_generic_new_sheriff_in_town
+		cost = 60
+		x = 0
+		y = 1
+		available = {
+		OR = {
+		TPM = {
+			is_subject = yes
+		}
+		NOT = {
+			country_exists = TPM
+		}
+	}
+}
+        prerequisite = {
+            focus = BAM_patrol1
+        }
+        relative_position_id = BAM_patrol1
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+		}
+	}
+	focus = {
+		id = BAM_maw1
+		icon = GFX_goal_TBH_gatormaws
+		cost = 30
+		x = -2
+		y = 1
+		available = {
+				has_war_with = GAM
+			}
+        prerequisite = {
+            focus = BAM_festung
+        }
+		bypass = {
+		GAM = {
+		exists = no
+		}
+	}
+        relative_position_id = BAM_festung
+		completion_reward = {
+			add_manpower = 100
+			add_war_support = .05
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+		}
+	}
+	focus = {
+		id = BAM_maw2
+		icon = GFX_goal_TBH_taming_the_jungle
+		cost = 60
+		x = 0
+		y = 1
+		available = {
+		OR = {
+		GAM = {
+			is_subject = yes
+		}
+		NOT = {
+			country_exists = GAM
+		}
+	}
+}
+        prerequisite = {
+            focus = BAM_maw1
+        }
+        relative_position_id = BAM_maw1
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+		}
+	}
+	focus = {
+		id = BAM_texas1
+		icon = GFX_goal_generic_texas2
+		cost = 30
+		x = 0
+		y = 1
+		available = {
+		OR = {
+		has_war_with = TBH
+		has_war_with = LNS
+	}
+}
+        prerequisite = {
+            focus = BAM_festung
+        }
+		bypass = {
+		TBH = {
+		exists = no
+		}
+		LNS = {
+		exists = no
+		}
+	}
+        relative_position_id = BAM_festung
+		completion_reward = {
+			add_manpower = 250
+			add_political_power = 100
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+		}
+	}
+	focus = {
+		id = BAM_texas2
+		icon = GFX_goal_LNS_rising_star
+		cost = 60
+		x = 0
+		y = 1
+		available = {
+			OR = {
+			AND = {
+		TBH = {
+		is_subject = yes
+		}
+		LNS = {
+		is_subject = yes
+		}
+	}
+			AND = {
+		TBH = {
+		exists = no
+		}
+		LNS = {
+		exists = no
+		}
+	}
+			}
+		}		
+       prerequisite = {
+            focus = BAM_texas1
+        }
+        relative_position_id = BAM_texas1
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+		}
+	}
+	focus = {
+		id = BAM_indians1
+		icon = GFX_goal_cho_mississippi_queen
+		cost = 30
+		x = 2
+		y = 1
+		available = {
+			OR = {
+				has_war_with = CHO
+			}
+		}
+        prerequisite = {
+            focus = BAM_festung
+        }
+		bypass = {
+		CHO = {
+		exists = no
+		}
+	}
+        relative_position_id = BAM_festung
+		completion_reward = {
+			add_manpower = 250
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 50
+			}
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+		}
+	}	
+	focus = {
+		id = BAM_indians2
+		icon = GFX_goal_cho_storytellers
+		cost = 60
+		x = 0
+		y = 1
+		available = {
+			OR = {
+		CHO = {
+		is_subject = yes
+		}
+		NOT = {
+			country_exists = CHO
+			}
+		}		
+	}
+        prerequisite = {
+            focus = BAM_indians1
+        }
+        relative_position_id = BAM_indians1
+		completion_reward = {
+			add_stability = .05
+			add_political_power = 50
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+		}
+	}
+	focus = {
+		id = BAM_CRINKLE_HIIIIIIIII
+		icon = GFX_goal_imo_blasta
+		cost = 30
+		x = 4
+		y = 1
+		#available = { #gets added with irontide
+		#has_war_with = IMO 
+		#}
+		#available = {
+		#has_country_flag = crinkle_I_barely_know_er_tt #i dont know anymore its 4am and a day after I did this just hide it
+		#}
+		bypass = {
+			NOT = {
+				has_country_flag = crinkle_I_barely_know_er_tt
+				}
+			}
+        prerequisite = {
+            focus = BAM_festung
+        }
+        relative_position_id = BAM_festung
+		completion_reward = {
+			add_manpower = 250
+			set_temp_variable = { caps_to_add = 50 }
+			add_caps = yes
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+				amount = 255
+				producer = USA
+			}
+			IF = {
+			limit = {
+			IMO = {
+			has_country_flag = crinkle_I_barely_know_er_tt
+				}
+			}
+		custom_effect_tooltip = bam_irontide_enabled_tt
+		}
+		else = {
+		custom_effect_tooltip = bam_irontide_needed_tt
+		}
+	}
+}
+	focus = {
+		id = BAM_mongers2
+		icon = GFX_goal_imo_inferno
+		cost = 60
+		x = 0
+		y = 1
+		#available = {
+		#has_country_flag = crinkle_I_barely_know_er_tt
+		#}
+        prerequisite = {
+            focus = BAM_CRINKLE_HIIIIIIIII
+        }
+		bypass = {
+			NOT = {
+				has_country_flag = crinkle_I_barely_know_er_tt
+				}
+			}
+        relative_position_id = BAM_CRINKLE_HIIIIIIIII
+		completion_reward = {
+			custom_effect_tooltip =	 bam_irontide_enabled_tt
+			add_stability = .05
+			add_political_power = 50
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+			IF = {
+			limit = {
+			IMO = {
+			has_country_flag = crinkle_I_barely_know_er_tt
+				}
+			}
+		}
+		else = {
+		custom_effect_tooltip = bam_irontide_needed_tt
+		}
+	}
+}
+	focus = {
+		id = BAM_festung_fr_this_time
+		icon = GFX_goal_land_flag
+		cost = 60
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_patrol2
+        }
+        prerequisite = {
+            focus = BAM_maw2
+        }
+        prerequisite = {
+            focus = BAM_texas2
+        }
+        prerequisite = {
+            focus = BAM_indians2
+        }
+        prerequisite = {
+            focus = BAM_mongers2
+        }
+        relative_position_id = BAM_texas2
+		completion_reward = {
+			swap_ideas = {
+			add_idea = 	bam_honest_work_alt
+			remove_idea = bam_honest_work
+			}
+		}
+	}
+	focus = {
+		id = BAM_shrimpment
+		icon = GFX_goal_TTM_Legacy_of_the_Wanderer
+		cost = 60
+		x = 0
+		y = 1
+        prerequisite = {
+            focus = BAM_festung_fr_this_time
+        }
+        relative_position_id = BAM_festung_fr_this_time
+		completion_reward = {
+			country_event = nf_bam.5
+		}
+	}

@@ -1,0 +1,50 @@
+TPM_strategy_plan = {
+	name = "TPM default"
+	desc = "Prio"
+
+	enable = {
+		original_tag = TPM
+	}
+	abort = {}
+
+	ai_national_focuses = {
+		tpm_minutes_of_madness
+		tpm_town_life
+		tpm_the_bluff
+		tpm_gold_and_blue
+		
+		tpm_best_policy
+		tpm_open_streets
+		tpm_never_meet_heroes
+		tpm_to_the_bottom
+		
+		tpm_callahan_revenge
+		tpm_maw_wargoal
+		tpm_bayou_wargoal
+		tpm_maw_aftermath
+		tpm_bayou_aftermath
+		tpm_tough_crowd
+		
+		tpm_the_dallas_meetup
+		tpm_elders_treachery
+		tpm_i_love_this_focus_name
+		tpm_obvious_tactic
+		tpm_ALL_YOU_HAD_TO_DO
+		tpm_proving_worth
+		tpm_armored_scouts
+		tpm_howdy_pardner
+		tpm_saints_and_sinners
+		
+		tpm_blackpeople_belike
+		tpm_determined_defenders
+		tpm_steelhand_siege
+		tpm_gunslingers_galore
+		tpm_texan_attitude
+		tpm_dismay_in_dallas
+		tpm_cho_bang_is_a_racist_lmao
+		tpm_rusks_request
+		tpm_open_for_business
+		tpm_iron_exodus
+		tpm_texan_roulette
+	}
+}

@@ -1,0 +1,27 @@
+BAM_strategy_plan = {
+	name = "BAM default"
+	desc = "Prio"
+
+	enable = {
+		original_tag = BAM
+	}
+	abort = {}
+
+	ai_national_focuses = {
+		BAM_captains_isolation
+		BAM_rears_its_head
+		BAM_cannery_captain
+		
+		BAM_bayou_life
+		BAM_trade_orleans
+		BAM_trade_houston
+		BAM_shrimpy
+		BAM_festung
+		
+		BAM_gumbo
+		BAM_language
+		
+		BAM_packed1
+		BAM_packed2
+	}
+}

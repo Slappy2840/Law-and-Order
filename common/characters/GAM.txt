@@ -1,0 +1,144 @@
+characters = {
+	GAM_sobek_the_powerful = {
+		name = "Sobek the Powerful"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_GAM_leader
+			}
+			army = {
+				large = GFX_Portrait_GAM_leader
+			}
+		}
+		country_leader = {
+			desc = SOBEK_DESC
+			ideology = warlordship
+			traits = {
+				cruel_tyrant
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		corps_commander = {
+			traits = {
+				agile_trait
+				lucky_trait
+				hot_blooded_trait
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	GAM_patrol_lead_marshall = {
+		name = "Patrol Lead Marshall"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_GAM_marshall
+			}
+		}
+		country_leader = {
+			desc = GAM_MARSHALL_DESC
+			ideology = unlimited_democracy
+			traits = {
+				GAM_marshall
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	GAM_theodore_claw = {
+		name = "Theodore Claw"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Raider_Generic_5
+				small = GFX_Portrait_Raider_Generic_5_small
+			}
+			army = {
+				large = GFX_Portrait_Raider_Generic_5
+				small = GFX_Portrait_Raider_Generic_5_small
+			}
+		}
+		country_leader = {
+			desc = CLAW_DESC
+			ideology = mercantile_elite
+			traits = {
+				prince_of_terror
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	GAM_grant_everyoung = {
+		name = "Grant Everyoung"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Settler_Generic_25
+			}
+		}
+		country_leader = {
+			desc = EVERYOUNG_DESC
+			ideology = meritocracy
+			traits = {
+				radical_reformer
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	GAM_teddy = {
+		name = "Theodore 'Teddy' Claw"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Raider_Generic_5_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			allowed = {
+					original_tag = GAM
+				}
+			traits = {
+				GAM_teddy
+				}
+			cost = 100
+			}
+		}
+	GAM_daren = {
+		name = "Daren Carter"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Settler_Generic_9_small
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			allowed = {
+					original_tag = GAM
+				}
+			traits = {
+				GAM_daren
+				}
+			cost = 100
+			}
+		}
+	GAM_clarence = {
+		name = "Clarence Reinhardt"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Settler_Generic_15_small
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			allowed = {
+					original_tag = GAM
+				}
+			traits = {
+				GAM_clarence 
+				}
+			cost = 100
+			}
+		}
+	}

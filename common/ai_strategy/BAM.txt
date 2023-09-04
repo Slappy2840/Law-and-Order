@@ -1,0 +1,20 @@
+BAM_bayou_patrol = {
+	allowed = {
+		original_tag = BAM
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TPM"
+		value = 500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HRO"
+		value = 501
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TLP"
+		value = 500
+	}
+}

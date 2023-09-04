@@ -1,0 +1,170 @@
+characters = {
+	BAM_captain_shipbreaker = {
+		name = BAM_CAPTAIN_SHIPBREAKER_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_BAM_leader
+			}
+		}
+		country_leader = {
+			desc = BAM_CAPTAIN_SHIPBREAKER_DESC
+			ideology = benevolent_dictatorship
+			traits = {
+				BAM_blanche_bay_baron
+			}
+			expire = "2285.1.1.12"
+			id = -1
+		}
+		navy_leader = {
+			traits = {
+				chief_engineer
+				spotter
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id = -1
+		}
+	}
+	BAM_hammock_of_319 = {
+		name = BAM_HAMMOCK_OF_319_NAME
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Tribal_Generic_16
+			}
+		}
+		corps_commander = {
+			traits = {
+				charismatic_trait
+				intelligent_trait
+				hoarder_trait
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	BAM_grant = {
+		name = "Patrol Lead Grant"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BAM_grant
+			}
+		}
+		country_leader = {
+				desc = "BAM_GRANT_DESC"
+			ideology = peoples_militia
+			traits = {
+				BAM_grant_trait
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	BAM_maidrum = {
+		name = "Merlin Maidrum"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_Ghoul_Mexico_Generic_4
+			}
+		}
+		country_leader = {
+				desc = "BAM_MERLIN_DESC"
+			ideology = technocracy 
+			traits = {
+				BAM_merlin
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	BAM_directorate = {
+		name = "The Motors Directorate"
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_HRO_parliament
+			}
+		}
+		country_leader = {
+				desc = "BAM_DIRECTORATE_DESC"
+			ideology = mercantile_elite
+			traits = {
+				BAM_directorate
+			}
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	BAM_susan = {
+		name = "Susan Langley"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Settler_Generic_21_small
+				large = GFX_Portrait_Settler_Generic_21
+			}
+		}
+		country_leader = {
+				desc = "BAM_SUSAN_DESC"
+			traits = {
+				BAM_susan2
+			}
+			ideology = peoples_militia
+			expire = "3000.01.01.01"
+			id = -1
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = BAM_susan_advisor
+			allowed = {
+					original_tag = BAM
+				}
+			traits = {
+				BAM_susan
+				}
+			cost = 100
+			}
+	}
+	BAM_chaco = {
+		name = "Chaco Devlop"
+				description = "BAM_CHACO_DESC"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Settler_Generic_23_small
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			allowed = {
+					original_tag = BAM
+				}
+			traits = {
+				BAM_chaco_trait
+				}
+			cost = 100
+			}
+	}
+	BAM_clyde = {
+		name = "Captain Clyde Delarosa"
+		description = "BAM_CLYDE_DESC"
+		portraits = {
+			civilian = {
+				small = GFX_Portrait_Settler_Generic_19_small
+			}
+		}
+		advisor = {
+			slot = army_chief
+			allowed = {
+					original_tag = BAM
+				}
+			traits = {
+				BAM_clyde_trait
+				}
+			cost = 200
+			}
+	}
+}

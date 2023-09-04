@@ -1,0 +1,124 @@
+ideas = {
+	country = { 
+		GAM_forgotten_children = {
+			picture = recruitment_pistol
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				research_speed_factor = -0.1
+			}
+			targeted_modifier = { tag = TPM attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = TPM defense_bonus_against = 0.1 }
+		}
+		GAM_forgotten_children_alt = {
+			picture = recruitment_pistol
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				research_speed_factor = -0.1
+			}
+			targeted_modifier = { tag = TPM attack_bonus_against = 0.15  }
+			targeted_modifier = { tag = TPM defense_bonus_against = 0.1 }
+		}
+		GAM_origin_cannibal  = {
+			picture = generic_cannibal
+			removal_cost = -1
+			modifier = {
+					breakthrough_factor = 0.1
+					army_attack_factor = 0.10
+					army_defense_factor = -0.10
+					experience_loss_factor = 0.15
+			}
+		}
+		GAM_origin_mob  = {
+			picture = cmc_criminal_underground_organized
+			removal_cost = -1
+			modifier = {
+						industrial_capacity_factory = 0.1
+						stability_factor = -0.1
+			}
+						equipment_bonus = {
+						infantry_equipment = {
+						build_cost_ic = -0.10
+						instant = yes
+					}
+				}
+		}
+		GAM_origin_pirate = {
+			picture = pantheon_tar
+			removal_cost = -1
+			modifier = {
+						caps_flat_income_modifier = 10
+						spotting_chance = 0.1						
+						naval_speed_factor = 0.1
+						industrial_capacity_dockyard = 0.2
+			
+			}
+		}
+		GAM_bandit_brothers = {
+			picture = generic_baddass
+			removal_cost = -1
+            modifier = {
+			stability_factor = -0.1
+				war_support_factor = 0.1
+                send_volunteer_size = 5
+                send_volunteer_divisions_required = -1
+							army_core_defence_factor = 0.1
+            }
+		}
+		GAM_hidden_in_the_sand = { #https://open.spotify.com/track/0RjG5JmdOWXAR68dGlKBA5?si=6f0a9563a7404ce9
+			picture = prc_the_long_march
+			removal_cost = -1
+			modifier = {
+			army_core_defence_factor = 0.1
+			dig_in_speed_factor = 0.1
+			max_dig_in = 10
+			}
+		}
+		GAM_CAR_trade = {
+			picture = cmc_criminal_underground_organized
+			removal_cost = -1
+			modifier = {
+			political_power_gain = 0.4
+			consumer_goods_factor = -0.05
+			caps_flat_income_modifier = 15
+			industrial_capacity_factory = 0.15
+			}
+		}
+		GAM_tribute = {
+			picture = cmc_criminal_underground_organized
+			removal_cost = -1
+			modifier = {
+			political_power_gain = -0.2
+			consumer_goods_factor = +0.05
+			caps_flat_income_modifier = -10
+			industrial_capacity_factory = -0.075
+			}
+		}
+		GAM_dead_texas = {
+			picture = mean_bastards
+			removal_cost = -1
+			modifier = {
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.05			
+			industrial_capacity_factory = 0.1
+			}
+		}
+		GAM_revenge = {
+			picture = mean_bastards
+			removal_cost = -1
+			modifier = {
+			justify_war_goal_time = -0.5
+			breakthrough_factor = 0.1
+			}
+		}
+		GAM_gator_gang = { #ok so a little BEHIND behind the scenes thing for anyone back here, i set up the event and looked at it in game, and for whatever reason it had this description https://cdn.discordapp.com/attachments/694674720716750918/1146452640230817862/image.png
+			picture = generic_raider_1 #no other idea in the mod has this description, and in the base game the maw doesn't even HAVE a localization file
+			removal_cost = -1 #I am beyond confused
+			modifier = { #if anyone has an idea about it please ping me in the submodding chat, I'd be beyond intrigued if you could find a source for it
+			compliance_growth_on_our_occupied_states = -0.1
+		    local_resources_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			}
+		}
+	}

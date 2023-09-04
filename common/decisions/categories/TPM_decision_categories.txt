@@ -1,0 +1,15 @@
+tpm_just_another_patrol_category = {
+	allowed = { 
+	tag = TPM 
+	}
+	available = {
+	has_completed_focus = tpm_tough_crowd
+	}
+	icon = decision_just_a_little_guy
+		visible = {
+			tag = TPM
+			has_completed_focus = tpm_tough_crowd
+		}
+	visible_when_empty = yes
+	priority = 300
+}
