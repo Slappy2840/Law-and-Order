@@ -1,0 +1,15 @@
+﻿units = {
+	fleet = {
+		name = "Big and Bad"
+		naval_base = 11756
+		task_force = {
+			name = "This Beautiful Life" #https://open.spotify.com/album/0EjGRZctOPqLyLi42KtYmu?si=L5kuzB-_TtSqsKUBpnYZbw
+			location = 11756
+			ship = { name = "Raising Arizona" definition = light_ship_unit equipment = { ship_hull_light_2 = { amount = 1 owner = TPM version_name = "Patrol Boat" } } }
+			ship = { name = "The Slappener" definition = light_ship_unit equipment = { ship_hull_light_2 = { amount = 1 owner = TPM version_name = "Patrol Boat" } } }
+			ship = { name = "Cranky Harpoon" definition = light_ship_unit equipment = { ship_hull_light_2 = { amount = 1 owner = TPM version_name = "Patrol Boat" } } }
+			ship = { name = "Crinkle's Shadow" definition = light_ship_unit equipment = { ship_hull_light_2 = { amount = 1 owner = TPM version_name = "Patrol Boat" } } }
+			ship = { name = "Jumpin' Jazz" definition = light_ship_unit equipment = { ship_hull_light_2 = { amount = 1 owner = TPM version_name = "Patrol Boat" } } }
+			}
+		}
+	}		

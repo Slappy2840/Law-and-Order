@@ -1,0 +1,11 @@
+﻿units = {
+	fleet = {
+		name = "Lawman's Lament"
+		naval_base = 11756
+		task_force = {
+			name = "Lawman's Lament"
+			location = 11756
+			ship = { name = "Lawman's Lament" pride_of_the_fleet = yes definition = heavy_ship_unit equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITZ version_name = "Heavy Ship" } } }
+		}
+	}
+}
