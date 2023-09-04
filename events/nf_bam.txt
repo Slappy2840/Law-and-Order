@@ -1,0 +1,238 @@
+﻿add_namespace = nf_bam
+add_namespace = news_bam_oh_he_dead
+
+country_event = {
+	id = nf_bam.1
+	title = nf_bam.1.t
+	desc = nf_bam.1.d
+	picture = GFX_event_sub_generic_boathouse
+	is_triggered_only = yes
+	option = {
+		name = nf_bam.1.a
+			set_temp_variable = { caps_to_add = -10 }
+			add_caps = yes
+			add_political_power = -10
+			custom_effect_tooltip = BAM_bayview_dinky
+			hidden_effect = {
+				load_oob = BAM_event_brig
+			}
+		}
+	option = {
+		name = nf_bam.1.b
+			set_temp_variable = { caps_to_add = -50 }
+			add_caps = yes
+			add_political_power = -50
+			custom_effect_tooltip = BAM_bayview_gettin_there
+			hidden_effect = {
+				load_oob = BAM_event_paddle_streamer
+			}
+	}
+	option = {
+	name = nf_bam.1.c
+			set_temp_variable = { caps_to_add = -100 }
+			add_caps = yes
+			add_political_power = -100
+			custom_effect_tooltip = BAM_bayview_based
+			hidden_effect = {
+				load_oob = BAM_event_battle_barge
+			}
+		}
+	}
+	country_event = {
+	id = nf_bam.2
+	title = nf_bam.2.t
+	desc = nf_bam.2.d
+	picture = GFX_event_BRK_cargo_ship_port
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_bam.2.a
+		add_ideas = {
+		bam_merchant_cannery
+		}
+	}
+	option = {
+		name = nf_bam.2.b
+		add_ideas = {
+		bam_merc_cannery
+	}
+}
+	option = {
+	name = nf_bam.2.c
+	add_ideas = {
+		bam_mariner_cannery	
+		}
+	}
+}
+country_event = {
+	id = nf_bam.3
+	title = nf_bam.3.t
+	desc = nf_bam.3.d
+	picture = GFX_event_sub_generic_sea_shanty
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_bam.3.a
+			add_tech_bonus = {
+                bonus = 0.25
+                uses = 4
+                category = cat_grand_army
+            }
+
+	}
+	option = {
+		name = nf_bam.3.b
+		add_tech_bonus = {
+                bonus = 0.25
+                uses = 4
+                category = cat_elite_army
+            }
+	}
+	option = {
+		name = nf_bam.3.c
+		add_tech_bonus = {
+                bonus = 0.25
+                uses = 4
+                category = cat_terror_tactics
+            }
+	}
+}
+country_event = {
+	id = nf_bam.4
+	title = nf_bam.4.t
+	desc = nf_bam.4.d
+	picture = GFX_event_sub_generic_tunnel
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_bam.4.a
+		set_temp_variable = { caps_to_add = 100 }
+		add_caps = yes
+		add_stability = 0.2
+		add_political_power = 100
+		870 = {
+				add_extra_state_shared_building_slots = 5
+				}
+		remove_ideas = { bam_post_raid_recovery }
+	}
+}
+country_event = {
+	id = nf_bam.5
+	title = nf_bam.5.t
+	desc = nf_bam.5.d
+	picture = GFX_event_tanker
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_bam.5.a
+		
+		add_ideas = {
+		bam_shrimpy
+		}
+		remove_ideas = {
+		bam_obvious_target 
+	}
+	add_political_power = 100
+	add_country_leader_trait = BAM_bayou_keeper
+	hidden_effect = {
+	country_event = {
+		id = news_bam_oh_he_dead.1
+		days = 300
+			}
+		}
+	}
+}
+country_event = {
+    id = nf_bam.6
+    title = nf_bam.6.t
+    desc = nf_bam.6.d
+    picture = GFX_event_BRK_wasteland_boat_militia
+
+    is_triggered_only = yes
+
+    option = {
+        name = nf_bam.6.a
+		
+        add_manpower = -13
+        add_stability = -0.1
+        add_war_support = 0.2
+        870 = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 3
+                }
+            }
+        add_ideas = {
+        bam_post_raid_recovery
+        }
+        custom_effect_tooltip = BAM_raise_conscription_tt
+        hidden_effect = {
+        IF  = {
+            limit = {
+            has_idea = { disarmed_nation }
+            }
+        add_ideas = {
+                volunteer_militia_conscription
+            }
+		}
+        else_IF = {
+            limit = {
+            has_idea = { volunteer_militia_conscription }
+        }
+        add_ideas = {
+                funded_militia_conscription
+                }
+            }
+        }
+    }
+}
+news_event  = { 
+	id = news_bam_oh_he_dead.1
+	title = news_bam_oh_he_dead.1.t
+	desc = news_bam_oh_he_dead.1.d
+	picture = GFX_event_sub_generic_trees
+
+	is_triggered_only = yes
+
+	option = {
+		name = news_bam_oh_he_dead.1.a
+		
+		add_stability = 0.1
+		BAM = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Mayor Susan Langley"
+				desc = "BAM_SUSAN_DESC"
+				picture = GFX_Portrait_Settler_Generic_21
+				expire = "3000.1.1"
+				ideology = peoples_militia
+				traits = {
+				BAM_susan2
+				}
+			}
+		create_country_leader = {
+			name = "Mayor Susan Langley"
+			desc = "BAM_SUSAN_DESC"
+			picture = GFX_Portrait_Settler_Generic_21
+			expire = "3000.1.1"
+			ideology = benevolent_dictatorship
+			traits = {
+				BAM_susan2
+			}
+		}
+		}
+		set_politics = {
+			ruling_party = people
+		}
+		set_popularities = {
+			ruler = 20
+			intellectuals = 10
+			people = 60
+			elites = 10
+		}
+	}
+}

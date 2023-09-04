@@ -1,0 +1,170 @@
+﻿add_namespace = nf_gam
+
+country_event = {
+	id = nf_gam.1
+	title = nf_gam.1.t
+	desc = nf_gam.1.d
+	picture = GFX_event_MOJ_close_down_van_graffs
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.1.a
+		add_ideas = { GAM_origin_cannibal }
+			army_experience = 50
+	}
+	option = {
+		name = nf_gam.1.b
+		add_ideas = { GAM_origin_mob }
+		set_temp_variable = { caps_to_add = +50 }
+		add_caps = yes
+	}
+	option = {
+		name = nf_gam.1.c
+		add_ideas = { GAM_origin_pirate }
+		navy_experience = 50
+	}
+}
+country_event = {
+	id = nf_gam.2
+	title = nf_gam.2.t
+	desc = nf_gam.2.d
+	picture = GFX_event_sub_generic_ruins_4
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.2.a
+		874 = {
+			add_building_construction = {
+			type = bunker
+			level = 2
+			instant_build = yes
+			}
+		}
+	873 = {
+			add_building_construction = {
+			type = bunker
+			level = 3
+			instant_build = yes
+			}	
+	}
+}
+	option = {
+		name = nf_gam.2.b
+                every_owned_state = {
+			add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = nf_gam.2.c
+		874 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+						}
+		}
+	}
+}
+country_event = {
+	id = nf_gam.3
+	title = nf_gam.3.t
+	desc = nf_gam.3.d
+	picture = GFX_event_slavery
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.3.a
+		add_stability = .1
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+	}
+
+	option = {
+		name = nf_gam.3.b
+		add_manpower = -7
+		add_stability = .05
+		add_war_support = .05
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+	}
+
+	option = {
+		name = nf_gam.3.c
+		add_manpower = -31
+		add_war_support = .1
+			add_popularity = {
+				ideology = ruler
+				popularity = 0.1
+				}
+	}
+}
+country_event = {
+	id = nf_gam.4
+	title = nf_gam.4.t
+	desc = nf_gam.4.d
+	picture = GFX_event_sub_generic_ruins_10
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.4.a
+		add_political_power = 250
+		add_state_core = 876
+		875 = {
+				resistance_target = 0.75
+				damage_building = {
+					type = infrastructure
+					damage = 10
+				}
+			}
+	}
+}
+country_event = {
+	id = nf_gam.5
+	title = nf_gam.5.t
+	desc = nf_gam.5.d
+	picture = GFX_event_sub_generic_swamo
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.5.a
+		add_political_power = -100
+		add_state_core = 870
+	}
+}
+country_event = {
+	id = nf_gam.6
+	title = nf_gam.6.t
+	desc = nf_gam.6.d
+	picture = GFX_event_ffi_ring_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_gam.6.a
+		set_cosmetic_tag = GAM_gator_gang
+			set_country_leader_name = {
+				name = "Gator Queen Sobek"
+			}
+		add_political_power = 100
+		add_ideas = { GAM_gator_gang }
+	}
+}
