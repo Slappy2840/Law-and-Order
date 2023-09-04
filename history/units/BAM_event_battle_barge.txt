@@ -1,0 +1,12 @@
+﻿units = {
+	fleet = {
+		name = "Ricera Dell'amia"
+		naval_base = 870
+		task_force = {
+			name = "USS Bayview"
+			location = 11756
+			
+			ship = { name = "USS Bayview" pride_of_the_fleet = yes  definition = heavy_ship_unit equipment = { heavy_navy_hull_tech_5 = { amount = 1 owner = BAM version_name = "USS Bayview" } } }
+		}
+	}
+}
