@@ -1,0 +1,28 @@
+ add_namespace = nf_tlt
+ 
+ country_event = {
+	id = nf_tlt.1
+	title = nf_tlt.1.t
+	desc = nf_tlt.1.d
+	picture = GFX_event_sub_generic_boathouse
+	is_triggered_only = yes
+	option = {
+		name = nf_tlt.1.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		set_cosmetic_tag = TPM_louisiana_lawmen
+				add_state_core = 870
+				add_state_core = 876
+				add_state_core = 875
+				add_state_core = 874
+				add_state_core = 873
+				every_state = {
+					limit = {
+						region = 145
+						}
+					TPM = {
+						transfer_state = PREV
+						}
+			}
+		}
+	}
