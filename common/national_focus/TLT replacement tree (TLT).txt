@@ -1,0 +1,14 @@
+focus_tree = { #yeah its just this, if you've seen the necropolis puppet its the exact same
+	id = TLT_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = TLT
+		}
+	}
+	default = no
+	shared_focus = settler_schools
+    shared_focus = settler_palisade
+    shared_focus = settler_community
+}

@@ -1,0 +1,35 @@
+GAM_strategy_plan = {
+	name = "GAM default"
+	desc = "Prio"
+
+	enable = {
+		original_tag = GAM
+	}
+	abort = {}
+
+	ai_national_focuses = {
+		GAM_gator_gang
+		GAM_enter_maw
+		GAM_fatty_fatty_no_parents
+		
+		GAM_across_the_river
+		GAM_pragmatic
+		GAM_paris_is_such_a_stupid
+		GAM_biker_friends
+		GAM_mobsters_loan
+		GAM_our_turn
+		GAM_tired_of_texas
+		GFX_goal_ATE_omen_of_destruction
+		GAM_somekinda_reference_that_i_dont_remember_at_the_moment_this_name_is_so_long_lets_see_how_long_we_can_get_it_to_go_before_i_get_bored_right_about_now_what_a_coincidence_yipee
+		
+		GAM_left1
+		GAM_left2
+		
+		GAM_right1
+		GAM_right2
+		
+		GAM_fuck_them_kids
+		GAM_intrusive_thoughts
+		GAM_FREE_CRACK
+	}
+}

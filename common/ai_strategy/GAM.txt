@@ -1,0 +1,25 @@
+GAM_swamp_patrol = {
+	allowed = {
+		original_tag = GAM
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TUB"
+		value = 500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CAR"
+		value = 501
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ASS"
+		value = 500
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "DSP"
+		value = 500
+	}
+}

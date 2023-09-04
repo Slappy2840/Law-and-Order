@@ -1,0 +1,42 @@
+characters = {
+	JAZ_jazzman = {
+		name = "The Jazzman"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jazzman
+			}
+		}
+		country_leader = {
+			#desc = 
+			ideology = survivalism
+			expire = "3000.01.01.01"
+			id = -1
+		}
+	}
+	JAZ_jazz_council = {
+		name = "The Jazz Council"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_jazzmen
+			}
+		}
+		country_leader = {
+			ideology = tribal_council
+			expire = "3000.1.1.12"
+			id = -1
+		}
+	}
+	JAZ_stonewall_solomon = {
+		name = "Stonewall Solomon"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_solomon
+			}
+		}
+		country_leader = {
+			ideology = technocracy 
+			expire = "3000.1.1.12"
+			id = -1
+		}
+	}
+}

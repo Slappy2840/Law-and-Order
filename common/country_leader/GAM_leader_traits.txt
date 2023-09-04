@@ -1,0 +1,32 @@
+leader_traits = {
+	GAM_teddy = {
+		random = no
+		army_attack_factor = 0.1
+		breakthrough_factor = 0.05
+		army_org_factor = -0.10
+		industrial_capacity_factory = 0.1
+		monthly_population = -0.1
+	}
+	GAM_daren = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		research_speed_factor = 0.05
+		caps_income_modifier = 0.10
+	}
+	GAM_clarence = {
+		random = no
+		industrial_capacity_factory = -0.1
+		stability_factor = 0.15
+		political_power_gain = 0.2
+	}
+	GAM_avenged = {
+		random = no
+		war_support_factor = 0.05
+	}
+	GAM_marshall = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		people_drift = 0.10
+		}
+}
