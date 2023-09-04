@@ -1,0 +1,18 @@
+﻿l_english:
+ tpm_mobsters_remove_corruption_tt:0 "§OWe'll devote a new branch of the Patrolmen to the eradication of the "Jazzmen", the mobsters of New Orleans, allowing us to remove the spirit we got in the event "Noble Beginnings"§!"
+ tpm_mmmmmmmmmburger_tt:0 "§OCallahan orders a burger§!"
+ formed_texas:0 "has formed the Provisional Republic!" #this was already a tag in the base game, im not sure why they didnt localize it
+ tpm_bastard_tt:0 "§OThis guys a cuck ON GOD§!" #https://cdn.discordapp.com/attachments/1060247398410092675/1146464300605644850/image.png
+ TPM_mac_tt:0 "§OMack's gone and drunk himself into a coma again. At least the hangover might remind him that he has a JOB to do.§!"
+ TPM_mac_salary_tt:0 "§OI did tell him I was gonna take a week off his pay...§!"
+ TPM_mac_hangover_tt:0 "§gIn one day:§!"
+ tbh_accepted_offer:0 "§gOne way or another, we accepted the Patrolmen's offer.§!"
+ bruddah_hood_accept:0 "§gThe Brotherhood have accepted out offer§!"
+ tpm_WAR_WAR_WAR:0 "§gThe Brotherhood have denied our offer§!"
+ tpm_pride_of_fleet:0 "We'll fix up the battle barge, and while we're at it, why not crown it as the pride of our new fleet!"
+ tpm_new_fleet:0 "Spawns the new official fleet of The Patrolmen"
+ tpm_new_fleet_flavor:0 "§g"Set sail for Itza!"§!"
+ TPM_austin_cannery_line_bigmoney:0 "§gThe infrastructure along the Austin-Cannery railroad will increase by 3§!"
+ TPM_austin_cannery_line_HAHA_POOR_ASS:0 "§gThe infrastructure along the Austin-Cannery railroad will increase by 1§!"
+ TPM_decisions_tt:0 "§gUnlocks new decisions§!"
+ tpm_post_launch_tooltip_tt:0 "§gIf the Texan Brotherhood decided to attack us for some reason or another, we'll wait a bit and then send an offer of a truce. It'll still be a pricey truce if they accept, but hey, it's better than the nightmare war a grudge match with Texas would result in.§!"
